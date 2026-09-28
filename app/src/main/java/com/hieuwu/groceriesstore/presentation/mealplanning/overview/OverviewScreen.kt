@@ -67,7 +67,7 @@ fun OverViewScreen(
             title = {
                 Text(
                     text = "Today's meals",
-                    color = Color.White
+                    color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
                 )
             },
             colors = TopAppBarDefaults.topAppBarColors(
@@ -78,7 +78,7 @@ fun OverViewScreen(
                     Icon(
                         imageVector = Icons.Filled.NavigateBefore,
                         contentDescription = null,
-                        tint = Color.White
+                        tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
                     )
                 }
             }

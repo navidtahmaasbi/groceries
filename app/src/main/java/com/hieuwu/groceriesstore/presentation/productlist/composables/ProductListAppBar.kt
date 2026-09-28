@@ -27,7 +27,7 @@ fun ProductListAppBar(
     modifier: Modifier = Modifier,
 ) {
     TopAppBar(
-        title = { Text(text = title, color = Color.White) },
+        title = { Text(text = title, color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)) },
         modifier = modifier,
         navigationIcon = {
             IconButton(onClick = navigateUp) {
@@ -45,14 +45,14 @@ fun ProductListAppBar(
                 Icon(
                     painter = painterResource(id = R.drawable.ic_baseline_filter_list_36),
                     contentDescription = stringResource(id = R.string.cd_save),
-                    tint = Color.White
+                    tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
                 )
             }
         },
         colors = TopAppBarDefaults.topAppBarColors(
             containerColor = colorResource(id = R.color.colorPrimary),
-            navigationIconContentColor = Color.White,
-            titleContentColor = Color.White
+            navigationIconContentColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
+            titleContentColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
         )
     )
 }

@@ -19,12 +19,14 @@ class SignUpFragment : Fragment() {
     ): View {
         return ComposeView(requireContext()).apply {
             setContent {
-                SignUpScreen(
-                    modifier = Modifier.fillMaxSize(),
-                    onSignUpSuccess = {
-                        findNavController().navigateUp()
-                    },
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    SignUpScreen(
+                        modifier = Modifier.fillMaxSize(),
+                        onSignUpSuccess = {
+                            findNavController().navigateUp()
+                        },
+                    )
+                }
             }
         }
     }

@@ -26,9 +26,11 @@ class NotificationSettingsFragment : Fragment() {
         )
         return ComposeView(requireContext()).apply {
             setContent {
-                NotificationSettingsScreen(
-                   onNavigateUp = { findNavController().navigateUp() }
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    NotificationSettingsScreen(
+                       onNavigateUp = { findNavController().navigateUp() }
+                    )
+                }
             }
         }
     }

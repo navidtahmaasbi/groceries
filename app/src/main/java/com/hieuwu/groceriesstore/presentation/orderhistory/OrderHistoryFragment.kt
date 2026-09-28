@@ -15,7 +15,9 @@ class OrderHistoryFragment : Fragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                OrderHistoryScreen()
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    OrderHistoryScreen()
+                }
             }
         }
     }

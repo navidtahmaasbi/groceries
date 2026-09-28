@@ -26,11 +26,11 @@ fun PrimaryButton(
         modifier = modifier.defaultMinSize(minHeight = 48.dp),
         enabled = enabled,
         onClick = onClick,
-        shape = RoundedCornerShape(8.dp),
+        shape = RoundedCornerShape(14.dp),
         colors = ButtonDefaults.buttonColors(
             containerColor = colorResource(id = R.color.colorPrimary),
             disabledContainerColor = colorResource(id = R.color.light_gray),
-            contentColor = Color.White,
+            contentColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
         ),
         content = content
     )

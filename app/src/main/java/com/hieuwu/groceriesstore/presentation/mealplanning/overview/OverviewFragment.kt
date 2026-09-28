@@ -18,9 +18,11 @@ class OverviewFragment : Fragment() {
     ): View {
         return ComposeView(requireContext()).apply {
             setContent {
-                OverViewScreen(
-                    onNavigateUpClick = { findNavController().navigateUp() }
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    OverViewScreen(
+                        onNavigateUpClick = { findNavController().navigateUp() }
+                    )
+                }
             }
         }
     }

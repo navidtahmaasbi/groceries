@@ -26,7 +26,7 @@ fun SecondaryButton(
         modifier = modifier.defaultMinSize(minHeight = 48.dp),
         enabled = enabled,
         onClick = onClick,
-        shape = RoundedCornerShape(8.dp),
+        shape = RoundedCornerShape(14.dp),
         colors = ButtonDefaults.outlinedButtonColors(
             contentColor = colorResource(id = R.color.colorPrimary),
             disabledContentColor = colorResource(id = R.color.colorPrimary).copy(

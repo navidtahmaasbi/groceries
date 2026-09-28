@@ -42,11 +42,11 @@ fun NotificationSettingsScreen(
     Scaffold(
         topBar = {
             CenterAlignedTopAppBar(
-                title = { Text(text = "Notifications", color = Color.White, fontWeight = FontWeight.Medium) },
+                title = { Text(text = "Notifications", color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white), fontWeight = FontWeight.Medium) },
                 actions = {
                     ClickableText(
                         text = AnnotatedString("SAVE"),
-                        style = TextStyle(color = Color.White, fontWeight = FontWeight.Medium),
+                        style = TextStyle(color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white), fontWeight = FontWeight.Medium),
                         onClick = {
                             viewModel.updateNotificationSettings()
                         },
@@ -58,7 +58,7 @@ fun NotificationSettingsScreen(
                         Icon(
                             imageVector = Icons.Filled.ArrowBack,
                             contentDescription = null,
-                            tint = Color.White
+                            tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
                         )
                     }
                 },

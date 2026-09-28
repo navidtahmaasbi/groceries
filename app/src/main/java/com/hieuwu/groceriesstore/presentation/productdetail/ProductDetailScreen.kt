@@ -55,7 +55,7 @@ fun ProductDetailScreen(
                     Text("Product details")
                 },
                 backgroundColor = colorResource(id = R.color.colorPrimary),
-                contentColor = Color.White,
+                contentColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(
@@ -142,7 +142,7 @@ fun ProductDetailScreen(
                 },
                 colors = ButtonDefaults.buttonColors(
                     backgroundColor = colorResource(id = R.color.primary_button),
-                    contentColor = Color.White
+                    contentColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
                 )
             ) {
                 Text(text = "Add to Basket")

@@ -20,14 +20,16 @@ class ExploreFragment : Fragment() {
 
         return ComposeView(requireContext()).apply {
             setContent {
-                ExploreScreen(
-                    navigateToProductList = { category ->
-                        navigateToProductList(category.id, category.name!!)
-                    },
-                    navigateToProductDetail = { product ->
-                         navigateToProductDetail(product.id)
-                    }
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    ExploreScreen(
+                        navigateToProductList = { category ->
+                            navigateToProductList(category.id, category.name!!)
+                        },
+                        navigateToProductDetail = { product ->
+                             navigateToProductDetail(product.id)
+                        }
+                    )
+                }
             }
         }
     }

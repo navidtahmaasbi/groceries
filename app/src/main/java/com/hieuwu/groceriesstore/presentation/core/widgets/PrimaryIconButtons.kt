@@ -32,7 +32,7 @@ fun PrimaryIconButton(
         colors = IconButtonDefaults.filledIconButtonColors(
             containerColor = colorResource(id = R.color.colorPrimary),
             disabledContainerColor = colorResource(id = R.color.light_gray),
-            contentColor = Color.White,
+            contentColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
         ),
         content = content
     )
@@ -48,7 +48,7 @@ fun PrimarySquareIconButton(
     onClick = onClick,
     modifier = modifier,
     enabled = enabled,
-    shape = RoundedCornerShape(8.dp),
+    shape = RoundedCornerShape(14.dp),
     content = content
 )
 

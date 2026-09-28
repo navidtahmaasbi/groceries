@@ -39,7 +39,7 @@ fun OrderHistoryScreen(
                 .fillMaxWidth()
                 .padding(vertical = 12.dp),
             text = "Order history",
-            color = Color.White,
+            color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
             style = MaterialTheme.typography.h5,
             textAlign = TextAlign.Center
         )
@@ -49,7 +49,7 @@ fun OrderHistoryScreen(
                 .fillMaxSize()
                 .padding(top = 64.dp)
                 .clip(RoundedCornerShape(topStartPercent = 8, topEndPercent = 8))
-                .background(Color.White),
+                .background(androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)),
         ) {
             val orderList = viewModel.orderList.collectAsState()
             LazyColumn(contentPadding = PaddingValues(20.dp)) {
@@ -70,7 +70,7 @@ fun OrderHistoryScreen(
                                 Text(
                                     modifier = modifier.padding(4.dp),
                                     text = "$ ${it.totalPrice}",
-                                    color = Color.White,
+                                    color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                                     style = MaterialTheme.typography.body1,
                                     fontWeight = FontWeight.SemiBold
                                 )

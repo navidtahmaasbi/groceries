@@ -17,11 +17,13 @@ class ProductDetailFragment : Fragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                ProductDetailScreen(
-                    onNavigateBack = {
-                        findNavController().navigateUp()
-                    }
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    ProductDetailScreen(
+                        onNavigateBack = {
+                            findNavController().navigateUp()
+                        }
+                    )
+                }
             }
         }
     }

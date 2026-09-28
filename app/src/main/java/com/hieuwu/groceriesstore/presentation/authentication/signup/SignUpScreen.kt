@@ -100,7 +100,7 @@ fun SignUpScreen(
                     .padding(top = 320.dp, start = 20.dp, end = 20.dp)
                     .fillMaxWidth()
                     .background(
-                        color = Color.White,
+                        color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                         shape = RoundedCornerShape(topStart = 48.dp, topEnd = 48.dp)
                     ),
                 verticalArrangement = Arrangement.spacedBy(12.dp),

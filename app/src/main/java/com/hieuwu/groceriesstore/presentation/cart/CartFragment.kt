@@ -18,9 +18,11 @@ class CartFragment : BottomSheetDialogFragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                CartScreen(
-                    modifier = Modifier.fillMaxWidth()
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    CartScreen(
+                        modifier = Modifier.fillMaxWidth()
+                    )
+                }
             }
         }
     }

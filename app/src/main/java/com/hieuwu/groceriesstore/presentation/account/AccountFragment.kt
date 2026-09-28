@@ -21,13 +21,15 @@ class AccountFragment : Fragment() {
 
         return ComposeView(requireContext()).apply {
             setContent {
-                AccountScreen(
-                    onSignInClick = ::navigateToAuthentication,
-                    onProfileSettingsClick = ::navigateToProfileSettings,
-                    onNotificationSettingsClick = ::navigateToNotificationsSettings,
-                    onOrderHistorySettingsClick = ::navigateToOrderHistory,
-                    onMealPlanningClick = ::navigateToMealPlanning,
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    AccountScreen(
+                        onSignInClick = ::navigateToAuthentication,
+                        onProfileSettingsClick = ::navigateToProfileSettings,
+                        onNotificationSettingsClick = ::navigateToNotificationsSettings,
+                        onOrderHistorySettingsClick = ::navigateToOrderHistory,
+                        onMealPlanningClick = ::navigateToMealPlanning,
+                    )
+                }
             }
         }
     }

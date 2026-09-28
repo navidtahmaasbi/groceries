@@ -41,6 +41,6 @@
         android:layout_marginBottom="18dp"
         android:background="@drawable/primary_button"
         android:text="@string/ok_thank_you"
-        android:textColor="@android:color/white" />
+        android:textColor="@color/warm_white" />
 
 </RelativeLayout>

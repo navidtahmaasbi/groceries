@@ -37,11 +37,11 @@ fun OnboardingScreenContent(
             text = stringResource(R.string.welcome_to_our_store),
             fontSize = 22.sp,
             fontWeight = FontWeight.Bold,
-            color = Color.White,
+            color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
         )
         Text(
             text = stringResource(R.string.get_your_gorceries_in_as_fast_as_one_hour),
-            color = Color.White,
+            color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
         )
         OnboardingGetStartedButton(
             modifier = Modifier.fillMaxWidth(),

@@ -19,7 +19,9 @@ class OnboardingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setTheme(R.style.AppTheme)
         setContent {
-            OnboardingScreen(navigateToMainInitialScreen = ::navigateToMainInitialScreen)
+            com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                OnboardingScreen(navigateToMainInitialScreen = ::navigateToMainInitialScreen)
+            }
         }
         setEvenListener()
     }

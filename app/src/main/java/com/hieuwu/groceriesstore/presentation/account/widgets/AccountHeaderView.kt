@@ -63,7 +63,7 @@ fun AccountHeaderTitle(
         text = Converter.stringToEmpTy(user?.name),
         fontSize = textUnit(id = R.dimen.text_big_bold),
         fontWeight = FontWeight.Bold,
-        color = Color.White,
+        color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
     )
 }
 
@@ -77,7 +77,7 @@ fun AccountHeaderSignedInView(
         Text(
             modifier = modifier,
             text = userDetail.orEmpty(),
-            color = Color.White,
+            color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
         )
     }
 }

@@ -21,7 +21,9 @@ class FavouriteFragment : Fragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                FavouriteScreen(modifier = Modifier.fillMaxWidth())
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    FavouriteScreen(modifier = Modifier.fillMaxWidth())
+                }
             }
         }
 

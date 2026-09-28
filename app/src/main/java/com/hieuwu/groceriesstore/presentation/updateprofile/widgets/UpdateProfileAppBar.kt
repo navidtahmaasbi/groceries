@@ -41,7 +41,7 @@ fun UpdateProfileAppBar(
                 text = stringResource(R.string.update_profile),
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
-                color = Color.White,
+                color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                 style = MaterialTheme.typography.titleLarge
             )
         },
@@ -50,7 +50,7 @@ fun UpdateProfileAppBar(
                 Text(
                     text = stringResource(R.string.save).uppercase(),
                     style = MaterialTheme.typography.titleMedium,
-                    color = Color.White,
+                    color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                 )
             }
         },

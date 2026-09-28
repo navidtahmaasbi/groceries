@@ -46,7 +46,7 @@ fun CartItem(
                 shape = RoundedCornerShape(12.dp)
             )
             .clip(RoundedCornerShape(12.dp))
-            .background(Color.White)
+            .background(androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white))
             .padding(16.dp),
     ) {
         Row(
@@ -96,7 +96,7 @@ fun CartItem(
                     Text(
                         text = "${lineItem.quantity}",
                         modifier = Modifier
-                            .background(color = Color.White, shape = RoundedCornerShape(5.dp))
+                            .background(color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white), shape = RoundedCornerShape(5.dp))
                             .border(
                                 width = 0.5.dp,
                                 color = Color.Gray,

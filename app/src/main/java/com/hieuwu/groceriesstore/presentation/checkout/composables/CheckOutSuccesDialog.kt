@@ -42,7 +42,7 @@ fun CheckoutSuccessDialog(
         Box(
             modifier = modifier
                 .clip(RoundedCornerShape(8.dp))
-                .background(Color.White)
+                .background(androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white))
                 .fillMaxWidth()
         ) {
             // Lottie Animation

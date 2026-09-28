@@ -125,7 +125,7 @@ fun ProductListSection(
                     iterations = LottieConstants.IterateForever
                 )
             }
-        } 
+        }
         else {
 
             Column {
@@ -218,19 +218,19 @@ fun SearchBarSection(
             modifier = Modifier.fillMaxWidth(),
             shape= CircleShape,
             colors = TextFieldDefaults.colors(
-                focusedIndicatorColor = Color.White,
-                unfocusedIndicatorColor = Color.White,
+                focusedIndicatorColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
+                unfocusedIndicatorColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                 focusedContainerColor = Color.Transparent,
                 unfocusedContainerColor = Color.Transparent,
-                focusedTextColor = Color.White,
-                unfocusedTextColor = Color.White,
-                cursorColor = Color.White
+                focusedTextColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
+                unfocusedTextColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
+                cursorColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
             ),
             leadingIcon = {
                 Icon(
                     imageVector = Icons.Filled.Search,
                     contentDescription = "search_icon",
-                    tint = Color.White
+                    tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
                 )
             },
             trailingIcon = {
@@ -239,7 +239,7 @@ fun SearchBarSection(
                         Icon(
                             painter = painterResource(id = R.drawable.ic_baseline_close),
                             contentDescription = "search_icon",
-                            tint = Color.White
+                            tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
                         )
                     }
                 }

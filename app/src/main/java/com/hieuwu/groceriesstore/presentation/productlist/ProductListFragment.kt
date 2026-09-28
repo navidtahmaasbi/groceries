@@ -25,12 +25,14 @@ class ProductListFragment : Fragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                ProductListScreen(
-                    navigateUp = { findNavController().navigateUp() },
-                    showFilter = ::showFilterDialog,
-                    openProductDetails = ::navigateToProductDetail,
-                    viewModel = viewModel
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    ProductListScreen(
+                        navigateUp = { findNavController().navigateUp() },
+                        showFilter = ::showFilterDialog,
+                        openProductDetails = ::navigateToProductDetail,
+                        viewModel = viewModel
+                    )
+                }
             }
             setObserver()
         }

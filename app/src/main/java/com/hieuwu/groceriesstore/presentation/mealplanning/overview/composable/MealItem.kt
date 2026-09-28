@@ -37,7 +37,7 @@ fun MealItem(
         modifier = modifier
             .height(164.dp)
             .fillMaxWidth(),
-        colors = CardDefaults.cardColors(containerColor = Color.White),
+        colors = CardDefaults.cardColors(containerColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)),
         elevation = CardDefaults.elevatedCardElevation(),
         shape = MaterialTheme.shapes.medium,
     ) {
@@ -68,7 +68,7 @@ fun MealItem(
                         Text(
                             modifier = modifier
                                 .fillMaxWidth()
-                                .background(Color.White)
+                                .background(androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white))
                                 .padding(12.dp),
                             text = meal.name
                         )

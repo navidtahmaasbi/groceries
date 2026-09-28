@@ -25,12 +25,14 @@ class CheckOutFragment : Fragment() {
 
         return ComposeView(requireContext()).apply {
             setContent {
-                CheckoutScreen(
-                    onSuccessDialogDismiss = { findNavController().navigateUp() },
-                    address = deliveryContent,
-                    onDeliveryEdit = { findNavController().navigate(R.id.action_checkOutFragment_to_deliveryFragment) },
-                    openAuthActivity = { startActivity(Intent(context, AuthActivity::class.java)) }
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    CheckoutScreen(
+                        onSuccessDialogDismiss = { findNavController().navigateUp() },
+                        address = deliveryContent,
+                        onDeliveryEdit = { findNavController().navigate(R.id.action_checkOutFragment_to_deliveryFragment) },
+                        openAuthActivity = { startActivity(Intent(context, AuthActivity::class.java)) }
+                    )
+                }
             }
         }
     }

@@ -49,7 +49,7 @@ fun DeliveryScreen(
                     Text(stringResource(id = R.string.delivery))
                 },
                 backgroundColor = colorResource(id = R.color.colorPrimary),
-                contentColor = Color.White,
+                contentColor = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(
@@ -129,7 +129,7 @@ fun DeliveryScreen(
                 },
                 modifier = Modifier.fillMaxWidth()
             ) {
-                Text(text = stringResource(id = R.string.update), color = Color.White)
+                Text(text = stringResource(id = R.string.update), color = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white))
             }
         }
     }

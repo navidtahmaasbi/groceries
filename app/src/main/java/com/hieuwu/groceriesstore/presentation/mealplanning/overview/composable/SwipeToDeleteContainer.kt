@@ -95,7 +95,7 @@ fun DeleteBackground(
         Icon(
             imageVector = Icons.Default.Delete,
             contentDescription = null,
-            tint = Color.White
+            tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white)
         )
     }
 }

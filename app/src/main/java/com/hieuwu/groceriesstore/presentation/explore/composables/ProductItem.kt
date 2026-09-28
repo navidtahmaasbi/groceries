@@ -41,16 +41,18 @@ fun ProductItem(
     Card(
         modifier = modifier
             .fillMaxWidth(),
-        elevation = 2.dp,
+        elevation = 1.dp,
+        shape = androidx.compose.foundation.shape.RoundedCornerShape(16.dp),
+        border = androidx.compose.foundation.BorderStroke(1.dp, colorResource(R.color.warm_outline)),
         onClick = { onNavigateToProductDetails(product.id) }
     ) {
         Column(
             modifier = modifier
                 .fillMaxWidth()
-                .padding(4.dp),
+                .padding(12.dp),
         ) {
             AsyncImage(
-                contentScale = ContentScale.Crop,
+                contentScale = ContentScale.Fit,
                 model = product.image,
                 contentDescription = null,
                 modifier = modifier
@@ -61,6 +63,7 @@ fun ProductItem(
             Text(
                 modifier = modifier.fillMaxWidth(), text = product.name ?: "",
                 maxLines = 1,
+                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis,
                 style = MaterialTheme.typography.subtitle1
             )
             Spacer(modifier = modifier.height(4.dp))
@@ -68,6 +71,8 @@ fun ProductItem(
                 modifier = modifier.fillMaxWidth(),
                 text = product.description ?: "",
                 maxLines = 2,
+                overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis,
+                color = colorResource(R.color.text_secondary),
             )
             Spacer(modifier = modifier.height(4.dp))
             Row(
@@ -82,14 +87,15 @@ fun ProductItem(
                 Button(
                     onClick = { onAddToCartClick(product) },
                     modifier = Modifier.size(48.dp),
+                    contentPadding = androidx.compose.foundation.layout.PaddingValues(0.dp),
                     colors = ButtonDefaults.buttonColors(
                         backgroundColor = colorResource(id = R.color.colorPrimary)
                     )
                 ) {
                     Icon(
                         imageVector = Icons.Filled.Add,
-                        contentDescription = null,
-                        tint = Color.White,
+                        contentDescription = "Add ${product.name.orEmpty()} to basket",
+                        tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                     )
                 }
             }

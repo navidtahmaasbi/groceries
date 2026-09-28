@@ -17,7 +17,9 @@ class UpdateProfileFragment : Fragment() {
     ): View {
         return ComposeView(requireContext()).apply {
             setContent {
-                UpdateProfileScreen(onBackClick = ::navigateUp)
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    UpdateProfileScreen(onBackClick = ::navigateUp)
+                }
             }
         }
     }

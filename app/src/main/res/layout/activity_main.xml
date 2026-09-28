@@ -46,7 +46,7 @@
         android:layout_height="wrap_content"
         android:contentDescription="@string/fab"
         android:src="@drawable/ic_baseline_shopping_cart_36"
-        app:tint="@android:color/white"
+        app:tint="@color/warm_white"
         android:backgroundTint="@color/primary_button"
         app:layout_anchor="@id/bottomAppBar" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

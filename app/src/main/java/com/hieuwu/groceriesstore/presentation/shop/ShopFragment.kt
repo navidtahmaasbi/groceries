@@ -16,10 +16,12 @@ class ShopFragment : Fragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                ShopScreen(
-                    navigateToProductDetails = { id -> navigateToProductDetail(id)
-                    }
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    ShopScreen(
+                        navigateToProductDetails = { id -> navigateToProductDetail(id)
+                        }
+                    )
+                }
             }
         }
     }

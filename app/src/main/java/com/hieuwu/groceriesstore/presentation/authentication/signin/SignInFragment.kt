@@ -20,15 +20,17 @@ class SignInFragment : Fragment() {
     ): View? {
         return ComposeView(requireContext()).apply {
             setContent {
-                SignInScreen(
-                    modifier = Modifier.fillMaxSize(),
-                    onSignUpClick = {
-                        findNavController().navigate(R.id.action_signInFragment_to_signUpFragment)
-                    },
-                    onSignInSuccess = {
-                        requireActivity().finish()
-                    }
-                )
+                com.hieuwu.groceriesstore.presentation.core.StoreTheme {
+                    SignInScreen(
+                        modifier = Modifier.fillMaxSize(),
+                        onSignUpClick = {
+                            findNavController().navigate(R.id.action_signInFragment_to_signUpFragment)
+                        },
+                        onSignInSuccess = {
+                            requireActivity().finish()
+                        }
+                    )
+                }
             }
         }
     }

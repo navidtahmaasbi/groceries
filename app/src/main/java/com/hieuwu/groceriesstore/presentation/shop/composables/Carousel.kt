@@ -102,7 +102,7 @@ fun Carousel(modifier: Modifier = Modifier) {
                         modifier = modifier.align(Alignment.Center),
                         imageVector = Icons.Filled.ArrowBackIosNew,
                         contentDescription = null,
-                        tint = Color.White,
+                        tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                     )
                 }
 
@@ -131,7 +131,7 @@ fun Carousel(modifier: Modifier = Modifier) {
                             },
                         imageVector = Icons.Filled.ArrowForwardIos,
                         contentDescription = null,
-                        tint = Color.White,
+                        tint = androidx.compose.ui.res.colorResource(com.hieuwu.groceriesstore.R.color.warm_white),
                     )
                 }
             }
